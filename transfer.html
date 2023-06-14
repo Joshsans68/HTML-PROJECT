@@ -18,28 +18,41 @@
   .navigation{
     grid-column: 1/4;
     grid-row: 1;
+    
   }
   .main-body{
+    margin-top: -60px;
     grid-row: 2;
   }
-  .arrow {
+  table{
+    width: 85%;
+    text-align: center;
+    background-color: rgba(103, 30, 145, 0.5);
+  }
+  td{
+            padding:14px;
+            border: solid 2px;
+            border-color: rgb(247, 6, 255);
+        }    
+        .arrow {
     position: absolute;
-    top: 32%;
-    left: 61%;
+    margin-left: -10px;
+    margin-top: -20px;
     transform: translate(-50%, -50%);
     transform: rotate(270deg);
     cursor: pointer;
 }
 
 .arrow span {
+    
     display: block;
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 1.0vw;
+    height: 1.0vw;
     border-bottom: 5px solid rgb(0, 255, 38);
     border-right: 5px solid rgb(0, 255, 64);
     transform: rotate(270deg);
-    margin: -10px;
-    animation: animate 2s infinite;
+    margin: 0px;
+    animation: animate 1.5s infinite;
 }
 
 .arrow span:nth-child(2) {
@@ -95,17 +108,53 @@
         </div>
         <div class="main-body">
           <h1>Latest Transfers</h1>
-          <br>
-          <article>
-            <img src="messitransfer.png" height="100px" style="float:left;">
-            <img src="psg.png" height="100px" style="margin-left: 40px;">
-            <div class="arrow">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <img src="intermiami.png" height="75px" style="float:right;margin-top: 10px;">
-          </article>
+          <table>
+            <tr>
+                <td>Player</td>
+                <td>FROM</td>
+                <td width="90px">
+                    
+                </td>
+                <td>TO</td>
+            </tr>
+            <tr>
+                <td><img src="messitransfer.png" width="100px"></td>
+                <td><img src="psg.png" width="100px"></td>
+                <td>
+                    <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </td>
+                <td><img src="intermiami.png" width="150px"></td>
+            </tr>
+            <tr>
+              <td><img src="messitransfer.png" width="100px"></td>
+              <td><img src="psg.png" width="100px"></td>
+              <td>
+                  <div class="arrow">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </td>
+              <td><img src="intermiami.png" width="150px"></td>
+          </tr>
+          <tr>
+            <td><img src="messitransfer.png" width="100px"></td>
+            <td><img src="psg.png" width="100px"></td>
+            <td>
+                <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </td>
+            <td><img src="intermiami.png" width="150px"></td>
+        </tr>
+        </table>
+
         </div>
        
         <div class="foot">Footer</div>
