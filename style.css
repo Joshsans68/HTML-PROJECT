@@ -3,7 +3,7 @@
  margin: 0;
 }
 .banner{
-    width: 130%;
+    width: 100%;
 }
 body{
     background: linear-gradient(180deg, rgb(145, 3, 138) 10%, rgb(8, 120, 146) 91%);
