@@ -8,16 +8,15 @@
 body{
     background: linear-gradient(180deg, rgb(145, 3, 138) 10%, rgb(8, 120, 146) 91%);
     color:rgb(0, 255, 251);
-    width: 90%;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
 }
 .container {
     display: grid; 
-    grid-template-columns: 0.5fr 2fr; 
+    grid-template-columns:0.5 fr 2fr; 
     grid-template-rows: 0.5fr 2fr 0.5fr;         
-    gap: 10px 10px; 
     padding: 10px;       
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
       }  
 
