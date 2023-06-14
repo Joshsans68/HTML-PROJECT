@@ -6,8 +6,8 @@
     width: 111%;
 }
 body{
-    background-color: rgb(5, 97, 118);
-    color:white;
+    background: linear-gradient(180deg, rgb(145, 3, 138) 10%, rgb(8, 120, 146) 91%);
+    color:rgb(0, 255, 251);
     width: 90%;
     font-family: 'Poppins', sans-serif;
 }
@@ -46,7 +46,7 @@ body{
       }
       img.ligue1{
         width: 60px;
-        margin-left: 15px;
+        margin-left: 1px;
       }
       
       .league-pic{
@@ -72,6 +72,49 @@ body{
     .treble{
         width: 100%;
     }
+    .league-pic {
+   
+        position: relative;
+        animation: MyDiv;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-direction: normal;
+      }
+      @keyframes MyDiv {
+        0%    {right: -400px; top: 0px;}
+        50%   {right: 0px;top:0px;}
+        75%  {right: -50px; top: 0px;}
+        100%   {right:  0px;top:0px;}
+      }
+
+@media only screen and (min-width:768px){
+    body{
+        background: linear-gradient(360deg, rgb(0, 0, 0) 10%, rgb(2, 118, 138) 91%);
+        width: 90%;
+    }
+    ul{
+        display:block;
+    }
+    .navigation{
+        margin-top: 20px;
+        grid-row: 2;
+        grid-column: 1/2;
+    }
+    .league-pic{
+        grid-column: 1/4;
+    }
+    nav{
+        float:left;
+    }
+    .main-body{
+        grid-column: 2/4;
+        grid-row: 2;
+    }
+    .container{
+        grid-template-columns: 0.2fr 1fr;
+    }
+}
     
 
 
