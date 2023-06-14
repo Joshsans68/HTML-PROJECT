@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<style>
+  .league-pic{
+    display:none;
+  }
+  .foot{
+    grid-row: 5;
+  }
+  .navigation{
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+  .main-body{
+    grid-row: 2;
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid rgb(0, 255, 38);
+    border-right: 5px solid rgb(0, 255, 64);
+    transform: rotate(270deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+</style>
+
+
+
+</head>
+<body>
+    <img src="banner (3).png" class="banner">
+    <div class="container">
+        <div class="league-pic">
+          <img class="uclpic" src="UCL TROPHY.png">
+          <img class="uconlpic" src="UEFAECLTROPHY.png">
+          <img class="ueuclpic" src="UELTROPHY.png">
+          <img class="premier-league" src="pl.png">
+          <img class="serie-A" src="seriaA.png">
+          <img class="ligue1" src="ligue1.png">
+          <img class="laliga" src="laliga.png">
+          <img class="bundes" src="bundes.png">
+          
+
+        </div>
+        <div class="navigation">
+          <nav>
+            <ul>
+              <li>HOME</li>
+              <li>NEWS</li>
+              <li><a href="transfer.html">TRANSFERS</a></li>
+              <li>FANTASY</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-body">
+          <h1>Latest Transfers</h1>
+          <br>
+          <article>
+            <img src="messitransfer.png" height="100px" style="float:left;">
+            <img src="psg.png" height="100px" style="margin-left: 40px;">
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <img src="intermiami.png" height="75px" style="float:right;margin-top: 10px;">
+          </article>
+        </div>
+       
+        <div class="foot">Footer</div>
+    </div>
+</body>
+</html>
