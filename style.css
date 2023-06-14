@@ -3,7 +3,7 @@
 body{
     font-family: 'Samsung Sans', sans-serif;
     color:white;    
-    background: linear-gradient(90deg, rgb(14, 14, 14) 0%, rgb(61, 65, 65) 75%, rgb(234, 18, 3) 100%); 
+    background: linear-gradient(90deg, rgb(14, 14, 14) 0%, rgb(222, 45, 5) 75%, rgb(234, 18, 3) 100%); 
                                            
 }
 .div7 {
@@ -62,4 +62,25 @@ li:hover{
     .div3 { grid-area: 2 / 1 / 5 / 2; border:solid 2px black;}
     .div4 { grid-area: 3 / 2 / 4 / 5; border:solid 2px black;}
     .div5 { grid-area: 4 / 2 / 5 / 5; border:solid 2px black;}
-    .div6 { grid-area: 3 / 5 / 5 / 6; border:solid 2px black;}
+    .div6 { grid-area: 3 / 5 / 5 / 6; border:solid 2px black; }
+
+    @media only screen and (max-width: 500px) {
+        body {
+            background: linear-gradient(90deg, rgb(14, 14, 14) 0%, rgb(32, 154, 19) 75%, rgb(15, 234, 3) 100%); 
+        }
+        .div6{
+            display:none;
+        }
+        .div3{
+            display: none;
+        }
+        .div4{
+            grid-area: 3/1/6/6;
+        }
+        .div5{
+            display:none;
+        }
+        .div2{
+            grid-area:6/1/6/6;
+        }
+      }
