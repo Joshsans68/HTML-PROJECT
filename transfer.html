@@ -18,18 +18,24 @@
   .navigation{
     grid-column: 1/4;
     grid-row: 1;
-    
+    box-shadow:  0PX 5PX 5PX rgb(255, 2, 234);
+    border-radius: 10PX;
   }
   .main-body{
-    margin-top: -60px;
+    margin-top: 10px;
     grid-row: 2;
   }
   table{  
+    margin-top: 20PX;
     text-align: center;
     background-color: rgba(209, 15, 190, 0.5);
+    box-shadow: 0PX 10PX 10PX 5PX rgb(255, 2, 234);
+    border-radius: 20PX;
   }
   td{
-    padding:5px;
+    
+    border-color: rgb(255, 3, 221);
+    padding:0px;
     width:20px;  
   }    
   .arrow {
@@ -52,6 +58,9 @@
     margin: 0px;
     animation: animate 1.5s infinite;
 }
+li{
+  margin-right: 45px;
+}
 
 .arrow span:nth-child(2) {
     animation-delay: -0.2s;
@@ -60,7 +69,10 @@
 .arrow span:nth-child(3) {
     animation-delay: -0.4s;
 }
-
+.foot{
+  text-align: center;
+  grid-column: 1/4;
+}
 @keyframes animate {
     0% {
         opacity: 0;
@@ -94,12 +106,14 @@
           
 
         </div>
+        
         <div class="navigation">
+          <H2 style="text-align: center;">MyFootBall-11</H2>
           <nav>
             <ul>
-              <li>HOME</li>
+              <li><a href="index.html" style="text-decoration: none;color: aqua;">HOME</a></li>
               <li>NEWS</li>
-              <li><a href="transfer.html">TRANSFERS</a></li>
+              <li><a href="transfer.html"style="text-decoration: none;color: rgb(255, 3, 221) ">TRANSFERS</a></li>
               <li>FANTASY</li>
             </ul>
           </nav>
@@ -109,15 +123,16 @@
           <table>
             <tr>
                 <td>Player</td>
-                <td>FROM</td>
+                <td>From</td>
                 <td width="90px">
                     
                 </td>
-                <td>TO</td>
+                <td>To</td>
+                <td>Value</td>
             </tr>
             <tr>
-                <td><img src="messitransfer.png" width="100px">Lionel <br>Messi</td>
-                <td><img src="psg.png" width="100px"></td>
+                <td><img src="messitransfer.png" width="80px">Lionel Messi</td>
+                <td><img src="psg.png" width="70px"></td>
                 <td>
                     <div class="arrow">
                     <span></span>
@@ -125,11 +140,12 @@
                     <span></span>
                   </div>
                 </td>
-                <td><img src="intermiami.png" width="150px"></td>
-            </tr>
+                <td><img src="intermiami.png" width="100px"></td>
+                <td>£45M</td>
+              </tr>
             <tr>
-              <td><img src="jude.png" width="100px">Jude Bellingam</td>
-              <td><img src="dortmund.png" width="100px"></td>
+              <td><img src="jude.png" width="70px">JudeBellingam</td>
+              <td><img src="dortmund.png" width="70px"></td>
               <td>
                   <div class="arrow">
                   <span></span>
@@ -137,11 +153,12 @@
                   <span></span>
                 </div>
               </td>
-              <td><img src="real madrid.png" width="110px"></td>
-          </tr>
+              <td><img src="real madrid.png" width="80px"></td>
+              <td>Unspecified</td>
+            </tr>
           <tr>
-            <td><img src="mcallister.png" width="100px">Alexis <br>Mac Allister</td>
-            <td><img src="brighton.png" width="150px"></td>
+            <td><img src="mcallister.png" width="80px">Mac-Allister</td>
+            <td><img src="brighton.png" width="120px"></td>
             <td>
                 <div class="arrow">
                 <span></span>
@@ -149,13 +166,14 @@
                 <span></span>
               </div>
             </td>
-            <td><img src="arsenal.png" width="90px"></td>
-        </tr>
+            <td><img src="arsenal.png" width="70px"></td>
+            <td>£36M</td>
+          </tr>
         </table>
 
         </div>
        
-        <div class="foot">Footer</div>
+        <div class="foot">MyFootBall11 &copy;2023</div>
     </div>
 </body>
 </html>
