@@ -16,30 +16,35 @@
     grid-row: 5;
   }
   .navigation{
-    grid-column: 1/4;
+    grid-column: 1;
     grid-row: 1;
     box-shadow:  0PX 5PX 5PX rgb(255, 2, 234);
     border-radius: 10PX;
     height: 90px;
+    width: 104%;
   }
   .main-body{
-    margin-top: -50px;
+    margin-top: -20px;
     grid-row: 2;
+    width:100%;
   }
   table{  
-    margin-top: 20PX;
+    
     text-align: center;
-    background-color: rgba(209, 15, 190, 0.5);
+    background-color: rgba(248, 5, 252, 0.388);
     box-shadow: 0PX 10PX 10PX 5PX rgb(255, 2, 234);
     border-radius: 20PX;
-    padding: 20px;
-    width: 100%;
+    border: 2px solid rgb(255, 2, 234);
+  }
+  thead{
+    background-color: rgba(221, 0, 255, 0.32);
+    color: rgb(2, 255, 255);
+    border-radius: 10px;
   }
   td{
-    border: 2px solid;
+    
     border-color: rgb(255, 3, 221);
-    padding:0px;
-    width:20px;  
+     
   }    
   .arrow {
     position: absolute;
@@ -63,7 +68,7 @@
 }
 li{
    text-align: center;
-   width: 100px;
+   
 }
 
 .arrow span:nth-child(2) {
@@ -125,20 +130,19 @@ li{
         <div class="main-body">
           <h1>Latest Transfers</h1>
           <table>
-            <tr>
-                <td style="width:100px">SL#</td>
+            <thead>
                 <td>Player</td>
                 <td>From</td>
-                <td width="90px">
+                <td>
                     
                 </td>
                 <td>To</td>
                 <td>Value</td>
-            </tr>
+            </thead>
             <tr>
-              <TD>1.</TD>
-                <td><img src="messitransfer.png" width="100px">Lionel Messi</td>
-                <td><img src="psg.png" width="90px"></td>
+              
+                <td><img src="messitransfer.png" width="70px"><br>Lionel Messi</td>
+                <td><img src="psg.png" width="70px"></td>
                 <td>
                     <div class="arrow">
                     <span></span>
@@ -146,13 +150,13 @@ li{
                     <span></span>
                   </div>
                 </td>
-                <td><img src="intermiami.png" width="120px"></td>
+                <td><img src="intermiami.png" width="90px"></td>
                 <td>£45M</td>
               </tr>
             <tr>
-              <TD>2.</TD>
-              <td><img src="jude.png" width="100px">Jude Bellingam</td>
-              <td><img src="dortmund.png" width="90px"></td>
+            
+              <td><img src="jude.png" width="70px"><br>Jude Bellingam</td>
+              <td><img src="dortmund.png" width="70px"></td>
               <td>
                   <div class="arrow">
                   <span></span>
@@ -160,27 +164,26 @@ li{
                   <span></span>
                 </div>
               </td>
-              <td><img src="real madrid.png" width="90px"></td>
+              <td><img src="real madrid.png" width="70px"></td>
               <td>----</td>
             </tr>
           <tr>
-            <TD>3.</TD>
-            <td><img src="mcallister.png" width="100px">Alexis Mac-Allister</td>
-            <td><img src="brighton.png" width="140px"></td>
+            <td><img src="mcallister.png" width="70px"><br>Alexis Mac-Allister</td>
+            <td><img src="brighton.png" width="110px"></td>
             <td>
                 <div class="arrow">
                 <span></span>
                 <span></span>
                 <span></span>
-              </div>
+                </div>
             </td>
-            <td><img src="arsenal.png" width="80px"></td>
+            <td><img src="arsenal.png" width="60px"></td>
             <td>£36M</td>
           </tr>
           <tr>
-            <TD>4.</TD>
-            <td><img src="enzo.png" width="100px">Enzo Fernandes</td>
-            <td><img src="benefica.png" width="70px"></td>
+          
+            <td><img src="enzo.png" width="70px"><br>Enzo Fernandes</td>
+            <td><img src="benfica.png" width="70px"></td>
             <td>
                 <div class="arrow">
                 <span></span>
@@ -188,7 +191,7 @@ li{
                 <span></span>
               </div>
             </td>
-            <td><img src="chelsea.png" width="70px"></td>
+            <td><img src="chelsea.png" width="100px"></td>
             <td>£106.8M</td>
           </tr>
         </table>
