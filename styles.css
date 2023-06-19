@@ -23,16 +23,16 @@ body{
     width: 150px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #06f7f3;
+    border: 2px solid #06f7f3;
     text-align: center;
     cursor: move;
   }
   
   .player-card img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   
   #team-roster {
@@ -53,7 +53,7 @@ body{
     height: 200px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 5px solid #fe04c8;
     text-align: center;
   }
   
@@ -69,7 +69,7 @@ body{
     height: 400px;
     margin: 40px auto;
     position: relative;
-    background: url("football-field.png") no-repeat center;
+    background: url("pitch.png") no-repeat center;
     background-size: contain;
     display: flex;
     justify-content: center;
