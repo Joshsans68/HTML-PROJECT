@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Football Players</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .player-card {
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .player-info {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .player-name {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .player-position {
+      font-style: italic;
+      color: #555;
+    }
+
+    .player-image {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select Football Player</h1>
+
+  <div class="container">
+    <div class="player-card">
+      <label for="player-select">Select Player:</label>
+      <select id="player-select" onchange="displayPlayerInfo()">
+        <option value="">Select</option>
+        <option value="ronaldo">Cristiano Ronaldo</option>
+        <option value="messi">Lionel Messi</option>
+        <option value="neymar">Neymar Jr.</option>
+      </select>
+
+      <div id="player-info" class="player-info">
+        <span id="player-name" class="player-name"></span>
+        <span id="player-position" class="player-position"></span>
+      </div>
+
+      <img id="player-image" class="player-image" src="" alt="Player Image">
+    </div>
+  </div>
+
+  <script>
+    function displayPlayerInfo() {
+      var playerSelect = document.getElementById("player-select");
+      var playerName = document.getElementById("player-name");
+      var playerPosition = document.getElementById("player-position");
+      var playerImage = document.getElementById("player-image");
+
+      playerName.textContent = "";
+      playerPosition.textContent = "";
+      playerImage.src = "";
+
+      var selectedPlayer = playerSelect.value;
+
+      if (selectedPlayer === "ronaldo") {
+        playerName.textContent = "Cristiano Ronaldo";
+        playerPosition.textContent = "Forward";
+        playerImage.src = "CR7.png";
+      } else if (selectedPlayer === "messi") {
+        playerName.textContent = "Lionel Messi";
+        playerPosition.textContent = "Forward";
+        playerImage.src = "messitransfer.png";
+      } else if (selectedPlayer === "neymar") {
+        playerName.textContent = "Neymar Jr.";
+        playerPosition.textContent = "Forward";
+        playerImage.src = "neymar.jpg";
+      }
+    }
+  </script>
+</body>
+</html>
