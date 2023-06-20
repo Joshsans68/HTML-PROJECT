@@ -1,64 +1,62 @@
-<!--<!DOCTYPE html>
-<html>
-<head>
-  <title>Fantasy Football Team</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <h1>Fantasy Football Team</h1>
-  <div class="pitch">
-    <div id="formation" class="formation">
-      <div class="position-GK"></div>  goalkeeper --> 
-<!--      
-      <div class="position"></div>  defenders 
-      <div class="position"></div>
-      <div class="position"></div>
-      <div class="position"></div>
-      <div class="position"></div>  midfielders 
-      <div class="position"></div>
-      <div class="position"></div>
-      <div class="position"></div>  forwards 
-      <div class="position"></div>
-      <div class="position"></div>
-    </div>
-    <div id="players" class="players">
-      <div class="player" draggable="true">Dea Gea<img src="degea.png" width="100px"></div>
-      <div class="player" draggable="true">Dea Gea<img src="degea.png" width="100px"></div>
-      <div class="player" draggable="true">Dea Gea<img src="degea.png" width="100px"></div>
-      <div class="player" draggable="true">Player 4</div>
-      <div class="player" draggable="true">Player 5</div>
-      <div class="player" draggable="true">Player 6</div>
-      <div class="player" draggable="true">Player 7</div>
-      <div class="player" draggable="true">Player 8</div>
-      <div class="player" draggable="true">Player 9</div>
-    </div>
-  </div>
-  <script src="script2.js"></script>
-</body>
-</html>
--->
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Fantasy Football Team</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<style>
+  .league-pic{
+    display:none;
+  }
+</style>
 </head>
 <body>
-  <div class="container">
+    <img src="cr7banner.jpg" class="banner">
+    <div class="container">
+        <div class="league-pic">
+          <img class="uclpic" src="UCL TROPHY.png">
+          <img class="uconlpic" src="UEFAECLTROPHY.png">
+          <img class="ueuclpic" src="UELTROPHY.png">
+          <img class="premier-league" src="pl.png">
+          <img class="serie-A" src="seriaA.png">
+          <img class="ligue1" src="ligue1.png">
+          <img class="laliga" src="laliga.png">
+          <img class="bundes" src="bundes.png">
+        </div>
     
-    <div class="GK"><img src="ederson.png" width="100px"><BR>EDERSON<BR></div>
-    <div class="RB"><img src="jc.png" width="100px" alt=""><br>Joao Cancelo<br></div>
-    <div class="LB"><img src="ruben.png" width="100px" alt="Dias"><BR>RUBEN DIAS</div>
-    <div class="RAM"><img src="bruno.png" alt="" width="100px"><br>Bruno Fernandes</div>
-    <div class="CAM"><img src="debruyne.png" alt="" width="100px"><br>De Bruyne</div>
-    <div class="LAM"><img src="jude.png" alt="" width="80px"><br>Jude Bellingham </div>
-    <div class="CB1"><img src="varane.png" width="100px" alt="Dias"><BR>Raphael Varane</div>
-    <div class="CB2"><img src="van dijk.png" width="100px" alt="Dias"><BR>Van Dijk</div>
-    <div class="RW"><img src="messitransfer.png" alt="" width="100px"><br>Lionel Messi</br></div>
-    <div class="CF"><img src="CR7.png" alt="" width="70px"><br>Cristiano Ronaldo</div>
+        <div class="navigation-transfer">        
+          <nav>
+            <ul>
+              <li><a href="index.html" style="text-decoration: none;color: aqua;">HOME</a></li>
+              <li><a href="news.html" style="text-decoration: none;color: aqua;">NEWS</a></li>
+              <li><a style="text-decoration: none;color: rgb(255, 2, 234);" src="transfer.html">TRANSFERS</a></li>
+              <li><a href="fantasy.html">FANTASY</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-body-transfer">
+          <h1 style="text-align: center;"><i>TEAM OF THE WEEK</i></h2>
+          <div class="grid-container">
+            
+            <div class="GK"><img src="ederson.png" width="100px"><BR>EDERSON<BR></div>
+            <div class="RB"><img src="jc.png" width="100px" alt=""><br>Joao Cancelo<br></div>
+            <div class="LB"><img src="ruben.png" width="100px" alt="Dias"><BR>RUBEN DIAS</div>
+            <div class="RAM"><img src="bruno.png" alt="" width="100px"><br>BrunoFernandes<br></div>
+            <div class="CAM"><img src="debruyne.png" alt="" width="100px"><br>De Bruyne</div>
+            <div class="LAM"><img src="jude.png" alt="" width="80px"><br>Bellingham </div>
+            <div class="CB1"><img src="varane.png" width="100px" alt="Dias"><BR>Raphael Varane</div>
+            <div class="CB2"><img src="van dijk.png" width="100px" alt="Dias"><BR>Van Dijk</div>
+            <div class="RW"><img src="messitransfer.png" alt="" width="100px"><br>Lionel Messi</br></div>
+            <div class="CF"><img src="CR7.png" alt="" width="80px"><br>Cristiano Ronaldo</div>
 
-    <div class="LW"><img src="neymar.png" alt="" width="80px"><br>Neymar Jr</div>
-  </div>
+            <div class="LW"><img src="neymar.png" alt="" width="80px"><br>Neymar Jr</div>
+          </div>
+        </div>
 </body>
 
 </html>
