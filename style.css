@@ -1,3 +1,4 @@
+
 *{
  padding:0;
  margin: 0;
@@ -132,6 +133,7 @@ a{
     .main-body{
         grid-row: 5;
         grid-column: 1/4;
+        
     }
     .main-body-transfer{
         margin-top: -40px;
@@ -166,6 +168,96 @@ a{
         75%  {right: -50px; top: 0px;}
         100%   {right:  0px;top:0px;}
       }
+
+    .grid-container
+      {  display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr ;
+        width: 10%;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "GK GK GK GK "
+          "RB CB1 CB2 LB"
+          "RAM .  CAM . LAM"
+          "RW . CF . LW";
+        
+      }
+      .GK { 
+    
+        grid-area: GK; 
+      text-align: center;
+      
+      grid-row: 1;
+      grid-column: 1/5;
+      }
+      .LB{
+        grid-area: LB; 
+        text-align: center;
+        grid-row: 2;
+        grid-column: 1/2;
+      }
+      .RB{
+        grid-area: RB;
+        text-align: center;
+        grid-row: 2;
+        grid-column: 4/5;
+      }
+      .CB1 { 
+        grid-area: CB1;
+        grid-column: 3/4;
+        grid-row: 2;
+        text-align: center;
+        margin-left: -5px;
+         }
+        
+         .CB2 { 
+          grid-area: CB2;
+          grid-column: 2/3;
+          grid-row: 2;
+          text-align: center;
+          margin-left: -45px;
+        }
+        .RW { 
+            grid-area: RW; 
+            grid-column: 1;
+            grid-row: 4;
+            margin-left: 50px;
+
+          }
+          .CF { 
+            grid-area: CF; 
+            grid-column: 3;
+            grid-row: 4;
+            margin-left: -110px;
+            text-align: center;
+          }
+          .LW{
+            grid-area: LW; 
+            grid-column: 4;
+            grid-row: 4;
+            margin-left: -10px;
+          }
+          .RAM { 
+            grid-area: RAM; 
+            grid-row: 3;
+            grid-column: 1;
+            text-align: center;
+            margin-left: 40px;
+          }
+          
+          .CAM { grid-area: CAM; 
+            grid-row: 3;
+            grid-column: 3;
+          text-align: center;
+          margin-left: -100px;
+          }
+          
+          .LAM { grid-area: LAM; 
+            grid-row: 3;
+            grid-column: 4;
+          text-align: center;
+          margin-left: -100px;
+          }
     
 @media only screen and (min-width:768px){
     body{
@@ -261,6 +353,99 @@ body{
 table{
     width: 100%;
 }
+.grid-container {  display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    width: 10%;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "GK GK GK GK GK GK GK"
+      "RB . CB1 . CB2 . LB"
+      ". . . . . . ."
+      "RAM . . CAM . . LAM"
+      ". . . . . . ."
+      "RW . . CF . . LW";
+    
+  }
+  
+  .RB { 
+    grid-area: RB; 
+    text-align: center;
+    grid-row: 2;
+    grid-column: 1;
+  }
+  
+  .GK { 
+    
+    grid-area: GK; 
+  text-align: center;
+  
+  grid-row: 1;
+  grid-column: 1/8;
+  }
+  
+  .LB { 
+    grid-area: LB; 
+    text-align: center;
+    grid-row: 2;
+    grid-column: 7;
+  }
+  
+  .RAM { 
+    grid-area: RAM; 
+    grid-row: 4;
+    grid-column: 2;
+    text-align: center;
+  }
+  
+  .CAM { grid-area: CAM; 
+    grid-row: 4;
+    grid-column: 4;
+  text-align: center;
+  margin-left: -30px;
+  }
+  
+  .LAM { grid-area: LAM; 
+    grid-row: 4;
+    grid-column: 6;
+  text-align: center;
+  }
+  
+  .CB1 { 
+  grid-area: CB1;
+  grid-column: 3/4;
+  grid-row: 2;
+  text-align: center;
+   }
+  
+   .CB2 { 
+    grid-area: CB2;
+    grid-column: 5/6;
+    grid-row: 2;
+    text-align: center;
+     }
+  .RW { 
+    grid-area: RW; 
+    grid-column: 1;
+    grid-row: 6;
+  
+  }
+  
+  .CF { 
+    grid-area: CF; 
+    grid-column: 4;
+    grid-row: 6;
+    margin-left: -40px;
+    text-align: center;
+  }
+  
+  .LW { 
+    grid-area: LW; 
+    grid-column: 7;
+    grid-row: 6;
+    margin-left: 60px;
+  }
+  
 
 }
 
