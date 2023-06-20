@@ -1,29 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pick and Drop Players</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <title>Dream Team Maker</title>
+  <style>
+    .container {
+      margin: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    select {
+      width: 200px;
+      padding: 5px;
+    }
+    
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h1>Pick and Drop Players</h1>
-
-  <div id="player-pool">
-    <h2>Player Pool</h2>
-    <div id="player-list">
-      <!-- Player selection options will be added dynamically -->
-    </div>
+  <div class="container">
+    <h1>Dream Team Maker</h1>
+    <form id="teamForm">
+      <label for="player1">Player 1:</label>
+      <select id="player1" name="player1">
+        <option value="">Select a player</option>
+        <option value="Player A">Player A</option>
+        <option value="Player B">Player B</option>
+        <!-- Add more players here -->
+      </select>
+      
+      <label for="player2">Player 2:</label>
+      <select id="player2" name="player2">
+        <option value="">Select a player</option>
+        <option value="Player A">Player A</option>
+        <option value="Player B">Player B</option>
+        <!-- Add more players here -->
+      </select>
+      
+      <!-- Add more player dropdowns here -->
+      
+      <button type="button" onclick="submitForm()">Create Dream Team</button>
+    </form>
   </div>
 
-  <div id="team-roster">
-    <h2>Your Team (11 Players)</h2>
-    <div id="selected-players">
-      <!-- Selected players will be displayed here -->
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script>
+    function submitForm() {
+      var selectedPlayers = [];
+      var dropdowns = document.getElementsByTagName("select");
+      
+      for (var i = 0; i < dropdowns.length; i++) {
+        var selectedPlayer = dropdowns[i].value;
+        if (selectedPlayer !== "") {
+          selectedPlayers.push(selectedPlayer);
+        }
+      }
+      
+      if (selectedPlayers.length === 11) {
+        alert("Dream Team created: " + selectedPlayers.join(", "));
+      } else {
+        alert("Please select 11 players for your Dream Team.");
+      }
+    }
+  </script>
 </body>
 </html>
