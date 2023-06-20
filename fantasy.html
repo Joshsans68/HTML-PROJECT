@@ -1,76 +1,64 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
-  <title>Dream Team Maker</title>
-  <style>
-    .container {
-      margin: 20px;
-    }
-    
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-    
-    select {
-      width: 200px;
-      padding: 5px;
-    }
-    
-    button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+  <title>Fantasy Football Team</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Fantasy Football Team</h1>
+  <div class="pitch">
+    <div id="formation" class="formation">
+      <div class="position-GK"></div>  goalkeeper --> 
+<!--      
+      <div class="position"></div>  defenders 
+      <div class="position"></div>
+      <div class="position"></div>
+      <div class="position"></div>
+      <div class="position"></div>  midfielders 
+      <div class="position"></div>
+      <div class="position"></div>
+      <div class="position"></div>  forwards 
+      <div class="position"></div>
+      <div class="position"></div>
+    </div>
+    <div id="players" class="players">
+      <div class="player" draggable="true">Dea Gea<img src="degea.png" width="100px"></div>
+      <div class="player" draggable="true">Dea Gea<img src="degea.png" width="100px"></div>
+      <div class="player" draggable="true">Dea Gea<img src="degea.png" width="100px"></div>
+      <div class="player" draggable="true">Player 4</div>
+      <div class="player" draggable="true">Player 5</div>
+      <div class="player" draggable="true">Player 6</div>
+      <div class="player" draggable="true">Player 7</div>
+      <div class="player" draggable="true">Player 8</div>
+      <div class="player" draggable="true">Player 9</div>
+    </div>
+  </div>
+  <script src="script2.js"></script>
+</body>
+</html>
+-->
+
+<html>
+<head>
+  <title>Fantasy Football Team</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Dream Team Maker</h1>
-    <form id="teamForm">
-      <label for="player1">Player 1:</label>
-      <select id="player1" name="player1">
-        <option value="">Select a player</option>
-        <option value="Player A">Player A</option>
-        <option value="Player B">Player B</option>
-        <!-- Add more players here -->
-      </select>
-      
-      <label for="player2">Player 2:</label>
-      <select id="player2" name="player2">
-        <option value="">Select a player</option>
-        <option value="Player A">Player A</option>
-        <option value="Player B">Player B</option>
-        <!-- Add more players here -->
-      </select>
-      
-      <!-- Add more player dropdowns here -->
-      
-      <button type="button" onclick="submitForm()">Create Dream Team</button>
-    </form>
-  </div>
+    
+    <div class="GK"><img src="ederson.png" width="100px"><BR>EDERSON<BR></div>
+    <div class="RB"><img src="jc.png" width="100px" alt=""><br>Joao Cancelo<br></div>
+    <div class="LB"><img src="ruben.png" width="100px" alt="Dias"><BR>RUBEN DIAS</div>
+    <div class="RAM"><img src="bruno.png" alt="" width="100px"><br>Bruno Fernandes</div>
+    <div class="CAM"><img src="debruyne.png" alt="" width="100px"><br>De Bruyne</div>
+    <div class="LAM"><img src="jude.png" alt="" width="80px"><br>Jude Bellingham </div>
+    <div class="CB1"><img src="varane.png" width="100px" alt="Dias"><BR>Raphael Varane</div>
+    <div class="CB2"><img src="van dijk.png" width="100px" alt="Dias"><BR>Van Dijk</div>
+    <div class="RW"><img src="messitransfer.png" alt="" width="100px"><br>Lionel Messi</br></div>
+    <div class="CF"><img src="CR7.png" alt="" width="70px"><br>Cristiano Ronaldo</div>
 
-  <script>
-    function submitForm() {
-      var selectedPlayers = [];
-      var dropdowns = document.getElementsByTagName("select");
-      
-      for (var i = 0; i < dropdowns.length; i++) {
-        var selectedPlayer = dropdowns[i].value;
-        if (selectedPlayer !== "") {
-          selectedPlayers.push(selectedPlayer);
-        }
-      }
-      
-      if (selectedPlayers.length === 11) {
-        alert("Dream Team created: " + selectedPlayers.join(", "));
-      } else {
-        alert("Please select 11 players for your Dream Team.");
-      }
-    }
-  </script>
+    <div class="LW"><img src="neymar.png" alt="" width="80px"><br>Neymar Jr</div>
+  </div>
 </body>
+
 </html>
