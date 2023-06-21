@@ -39,24 +39,128 @@
             </ul>
           </nav>
         </div>
-        <div class="main-body-transfer">
-          <h1 style="text-align: center;"><i>TEAM OF THE WEEK</i></h2>
-          <div class="grid-container">
-            
-            <div class="GK"><img src="ederson.png" width="100px"><BR>EDERSON<BR></div>
-            <div class="RB"><img src="jc.png" width="100px" alt=""><br>Joao Cancelo<br></div>
-            <div class="LB"><img src="ruben.png" width="100px" alt="Dias"><BR>RUBEN DIAS</div>
-            <div class="RAM"><img src="bruno.png" alt="" width="100px"><br>BrunoFernandes<br></div>
-            <div class="CAM"><img src="debruyne.png" alt="" width="100px"><br>De Bruyne</div>
-            <div class="LAM"><img src="jude.png" alt="" width="80px"><br>Bellingham </div>
-            <div class="CB1"><img src="varane.png" width="100px" alt="Dias"><BR>Raphael Varane</div>
-            <div class="CB2"><img src="van dijk.png" width="100px" alt="Dias"><BR>Van Dijk</div>
-            <div class="RW"><img src="messitransfer.png" alt="" width="100px"><br>Lionel Messi</br></div>
-            <div class="CF"><img src="CR7.png" alt="" width="80px"><br>Cristiano Ronaldo</div>
-
-            <div class="LW"><img src="neymar.png" alt="" width="80px"><br>Neymar Jr</div>
+        <div class="main-body-fantasy">
+          <div>
+              <h4 style="color: rgb(247, 3, 129);">CHOOSE YOUR ATTACKERS</h4>
           </div>
+          
+
+            <div id="lefta">
+            
+            <div class="LOA" draggable="true"><img src="CR7.png" width="30px">Cristiano Ronaldo</div>
+            <div class="LOA" draggable="true"><img src="kane.png" width="30px">Harry Kane</div>
+            <div class="LOA" draggable="true"><img src="messi.png" width="35px">Lionel Messi</div>
+            <div class="LOA" draggable="true"><img src="neymar.png" width="30px">Neymar Jr</div>
+            <div class="LOA" draggable="true"><img src="haaland.png" width="40px">Erling Haaland</div>
+            <div class="LOA" draggable="true"><img src="salah.png" width="40px">Mohammed Salah</div>
+            <div class="LOA" draggable="true"><img src="son.png" width="40px">Son</div>
+           
+          </div>
+
+          <h4 style="color: rgb(13, 243, 44);">CHOOSE YOUR MIDFIELD</h2>
+          <div id="leftm">
+            <div class="LOM" draggable="true"><img src="bruno.png" width="40px">Bruno Fer- nandes</div>
+            <div class="LOM" draggable="true"><img src="debruyne.png" width="40px">Kevin De Bruyne</div>
+            <div class="LOM" draggable="true"><img src="jude.png" width="40px">Jude Belling- ham</div>
+            <div class="LOM" draggable="true"><img src="modric.png" width="40px">Modric</div>
+            <div class="LOM" draggable="true"><img src="kroos.png" width="40px">Tony Kroos</div>
+            <div class="LOM" draggable="true"><img src="mcallister.png" width="40px">Alexis Mac Allister</div>
+            <div class="LOM" draggable="true"><img src="llorente.png" width="45px">Marco Llorente</div>
+
+          </div>
+        
+          <h4 style="color: rgb(252, 252, 5);">CHOOSE YOUR DEFENCE</h2>
+        <div id="leftd">
+            
+            <div class="LOD" draggable="true"><img src="marqui.png" width="40px">Marquinhos</div>
+            <div class="LOD" draggable="true"><img src="rudiger.png" width="40px">Anthony Rudiger</div>
+            <div class="LOD" draggable="true"><img src="varane.png" width="40px">Raphael Varane</div>
+            <div class="LOD" draggable="true"><img src="jc.png" width="40px">Joao Canelo</div>
+            <div class="LOD" draggable="true"><img src="van dijk.png" width="40px">Virgil Van Dijk</div>
+
         </div>
+        <div id="righta" style="color:white"></div>
+        
+        <div id="rightm" style="color:white"></div>
+        <div id="rightd" style="color:white"></div>
+          
+      
+            
+        </div>
+
+        <script>
+          let listofAttackers = document.getElementsByClassName("LOA");
+        let listofMidfield = document.getElementsByClassName("LOM");
+        let rightboxa = document.getElementById("righta");
+        let rightboxm = document.getElementById("rightm");
+        let leftboxa = document.getElementById("lefta");
+        let leftboxm = document.getElementById("leftm");
+
+        let listofDefender = document.getElementsByClassName("LOD");
+        let rightboxd = document.getElementById("rightd");
+        let leftboxd = document.getElementById("leftd");
+        
+        for(LOM of listofMidfield){
+            LOM.addEventListener("dragstart", function(e){
+                let selected = e.target;
+
+                rightboxm.addEventListener("dragover", function(e){
+                    e.preventDefault();
+                });
+                rightboxm.addEventListener("drop", function(e){
+                    rightboxm.appendChild(selected);
+                    selected=null;
+                });
+                leftboxm.addEventListener("dragover",function(e){
+                    e.preventDefault();
+                });
+                leftboxm.addEventListener("drop",function(e){
+                    leftboxm.appendChild(selected);
+                    selected=null;
+                }); 
+            })
+        }
+        for(LOA of listofAttackers){
+            LOA.addEventListener("dragstart", function(e){
+                let selected = e.target;
+
+                rightboxa.addEventListener("dragover", function(e){
+                    e.preventDefault();
+                });
+                rightboxa.addEventListener("drop", function(e){
+                    rightboxa.appendChild(selected);
+                    selected=null;
+                });
+                leftboxa.addEventListener("dragover",function(e){
+                    e.preventDefault();
+                });
+                leftboxa.addEventListener("drop",function(e){
+                    leftboxa.appendChild(selected);
+                    selected=null;
+                }); 
+            })
+        }
+        for(LOD of listofDefender){
+            LOD.addEventListener("dragstart", function(e){
+                let selected = e.target;
+
+                rightboxd.addEventListener("dragover", function(e){
+                    e.preventDefault();
+                });
+                rightboxd.addEventListener("drop", function(e){
+                    rightboxd.appendChild(selected);
+                    selected=null;
+                });
+                leftboxd.addEventListener("dragover",function(e){
+                    e.preventDefault();
+                });
+                leftboxd.addEventListener("drop",function(e){
+                    leftboxd.appendChild(selected);
+                    selected=null;
+                }); 
+            })
+        }
+        </script>
 </body>
 
 </html>
