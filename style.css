@@ -282,7 +282,8 @@ a{
   grid-row: 3;
 }
 video{
-  margin-left: -420px;
+  margin-left: 0px;
+  width: 100%;
 }
 .LOD{                 /*LIST OF attackers*/
 background: #e91e63;
