@@ -3,7 +3,10 @@
  padding:0;
  margin: 0;
 }
-
+.schedule{
+  grid-column:1/4;
+  grid-row: 5;
+}
 ::selection{
   background-color: aliceblue;
   color: #e91e63;
@@ -100,13 +103,25 @@ a{
         width: 100px;
         margin-right: 10px;
       }
+      .uclpic:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
       img.uconlpic{
         width: 65px;
         margin-right: 10px;
       }
+      .uconlpic:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
       img.ueuclpic{
         width: 100px;
         margin-right: 10px;
+      }
+      .ueuclpic:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
       }
       img.premier-league{
         width: 70px;
@@ -266,6 +281,9 @@ a{
   grid-column: 1/2;
   grid-row: 3;
 }
+video{
+  margin-left: -420px;
+}
 .LOD{                 /*LIST OF attackers*/
 background: #e91e63;
 height: 40px;
@@ -277,7 +295,9 @@ align-items: center;
 cursor: grab;
 font-size: 8px;
 }
-    
+.side-advt{
+  display: none;
+}    
     
 @media only screen and (min-width:768px){
     body{
