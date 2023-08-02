@@ -32,6 +32,7 @@ table{
      
   }    
   .arrow {
+
     position: absolute;
     margin-left: -10px;
     margin-top: -20px;
@@ -321,10 +322,7 @@ font-size: 8px;
         margin-left: 0px;
         width: 50px;
     }
-    nav{
-      
-      
-      }
+    
     .main-body{
         grid-column: 2/4;
         grid-row: 2;
